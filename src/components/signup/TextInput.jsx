@@ -1,9 +1,9 @@
 import React from "react";
 import classes from "../../style/TextInput.module.css";
-const TextInput = ({ type, placeholder }) => {
+const TextInput = ({ icon, ...rest }) => {
   return (
     <div class={classes.textInput}>
-      <input type={type} placeholder={placeholder} />
+      <input {...rest} />
       <span class="material-icons-outlined"> person </span>
     </div>
   );
