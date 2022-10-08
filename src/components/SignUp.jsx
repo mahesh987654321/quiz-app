@@ -4,6 +4,7 @@ import Illestration from "./signup/Illestration";
 import classes from "../style/SignUp.module.css";
 import TextInput from "./signup/TextInput";
 import Checkbox from "../pages/Checkbox";
+import Button from "../pages/Button";
 
 const SignUp = () => {
   return (
@@ -29,6 +30,10 @@ const SignUp = () => {
             icon="lock_clock"
           />
           <Checkbox text="I agree to the terms &amp; Conditions" />
+          <Button>Submit Now</Button>
+          <div class="info">
+            Already have an account? <a href="login.html">Login</a> instead.
+          </div>
         </Form>
       </div>
     </div>
